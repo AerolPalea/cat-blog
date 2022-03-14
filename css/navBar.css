@@ -203,11 +203,7 @@
 }
 
 .navMenuOptions li a:hover {
-  font-size: 1.5rem;
-  cursor: pointer;
   color: #1c3afe;
-  outline: 3px solid;
-  padding: 5px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -236,9 +232,6 @@
   color: #1c3afe !important;
   font-size: 1.5rem;
   cursor: pointer;
-  outline: 3px solid;
-  border-radius: 5px;
-  padding: 5px !important;
 }
 
 .searchField {
