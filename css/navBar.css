@@ -1,0 +1,260 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+  padding: 40px 0;
+  z-index: 999;
+  background-color: #f8f8f8;
+}
+
+.top {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuOpenerWrapper {
+  height: 18px;
+  width: 25px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menuOpenerWrapper span {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  color: black;
+  left: 0;
+}
+
+.menuOpenerWrapper span:first-child {
+  top: 0.5px;
+}
+
+.menuOpenerWrapper span:last-child {
+  bottom: 0;
+}
+
+.siteLogo img {
+  cursor: pointer;
+}
+
+.navTopRight {
+  display: flex;
+  align-items: center;
+}
+
+.mediaQueryDiv img {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .navBar {
+    padding-bottom: 20px !important;
+  }
+
+  .top {
+    justify-content: center;
+  }
+
+  .menuOpenerWrapper {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 999;
+  }
+
+  .navTopRight {
+    position: fixed;
+    bottom: 6px;
+    right: 10px;
+  }
+
+  .socialMediaLinks {
+    position: fixed !important;
+    top: 40%;
+    left: 0;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: #f8f8f8;
+  }
+
+  .socialMediaLinks::after {
+    display: none;
+  }
+
+  .mediaQueryDiv {
+    position: fixed;
+    bottom: 0;
+    height: 55px;
+    width: 100vw;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+  }
+
+  .mediaQueryDiv img {
+    cursor: pointer;
+  }
+
+  .kebabMenu {
+    display: block !important;
+  }
+
+  main {
+    margin-top: 114px !important;
+  }
+
+  .bottom {
+    display: none !important;
+  }
+}
+
+.socialMediaLinks {
+  margin-right: 25px;
+  position: relative;
+}
+
+.hoverContainer:hover > .socialMediaLinks a {
+  opacity: 0.3;
+}
+
+.socialMediaLinks a {
+  text-decoration: none;
+  padding: 5px;
+  user-select: none;
+  transition: 0.5s ease;
+}
+
+.socialMediaLinks a:hover {
+  opacity: 1 !important;
+}
+
+.socialMediaLinks::after {
+  content: "";
+  height: 30px;
+  width: 0.3px;
+  right: -13px;
+  top: -5px;
+  background-color: rgb(201, 201, 201);
+  position: absolute;
+}
+
+.navSearchIcon {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+
+.navSearchIcon:hover {
+  background-color: #dcd8d8;
+}
+
+.navSearchIcon img:last-child {
+  display: none;
+  margin-left: 1px;
+}
+
+.bottom {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  position: relative;
+  min-width: 500px;
+}
+
+.navMenuOptions {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navMenuOptions li {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navMenuOptions a {
+  text-decoration: none;
+  color: #bbbbbb;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.navMenuOptions li a:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1c3afe;
+  outline: 3px solid;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .navMenuOptions::before {
+    content: "";
+    left: 0;
+    bottom: 10px;
+    height: 1px;
+    width: 20%;
+    background-color: rgb(201, 201, 201);
+    position: absolute;
+  }
+
+  .navMenuOptions::after {
+    content: "";
+    right: 0;
+    bottom: 10px;
+    height: 1px;
+    width: 20%;
+    background-color: rgb(201, 201, 201);
+    position: absolute;
+  }
+}
+
+.active {
+  color: #1c3afe !important;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: 3px solid;
+  border-radius: 5px;
+  padding: 5px !important;
+}
+
+.searchField {
+  visibility: hidden;
+}
+
+#searchFieldInput {
+  background-color: #f8f8f8;
+}
+
+.searchField input {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 3rem;
+  text-align: center;
+}

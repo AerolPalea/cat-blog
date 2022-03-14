@@ -1,0 +1,202 @@
+.footerWrapper {
+  display: inline-flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 95px 155px;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  background-color: #f8f8f8;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.footerWrapper > * {
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  padding: 40px;
+}
+
+.footerWrapper > *:hover {
+  background-color: #f5f5f5;
+}
+
+.footerWrapper::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgb(232, 232, 232);
+  position: absolute;
+  top: 0px;
+}
+
+.footerSubscribe {
+  flex: 3;
+  width: min-content;
+  border-radius: 20px;
+}
+
+.footerSubscribe h3 {
+  font-size: 1.5rem;
+}
+
+.userInputFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInputFooter input {
+  outline: none;
+  padding: 14px 14px;
+  font-size: 18px;
+  color: lightgray;
+  border: 1px solid lightgray;
+  margin: 70px 0 20px;
+  max-width: 95%;
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+.userInputFooter input:focus {
+  border-radius: 5px;
+  border: 0.1px solid black;
+  height: "" - 4px;
+  width: " - 4px";
+}
+
+.userInputFooter input:focus ~ .footerSubscribe {
+  background-color: white;
+}
+
+.userInputFooter input::placeholder {
+  color: black;
+}
+
+.userInputFooter input:focus::placeholder {
+  color: transparent;
+}
+
+.userInputFooter button {
+  border: none;
+  background: black;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px auto 10px 0;
+}
+
+.userInputFooter button:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.footerSocials {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.footerSocials h5 {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.footerSocialLinks {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footerSocialLinks a {
+  filter: saturate(0%);
+  width: fit-content;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.footerSocialLinks a:hover {
+  opacity: 1 !important;
+  filter: saturate(100%) !important;
+}
+
+.footerNav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  flex-direction: column;
+  min-height: 250px;
+}
+
+.footerNav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  width: fit-content;
+  color: #bbbbbb;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+.footerNav a:hover {
+  color: #1c3afe;
+  font-size: 22px;
+}
+
+.copyrightInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.copyrightInfo h4 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.copyrightInfo p {
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+.empty {
+  height: 40px;
+  width: 100%;
+  margin-top: 200px;
+}
+
+@media screen and (max-width: 945px) {
+  .footerWrapper {
+    padding: 30px 90px 50px;
+  }
+  .footerWrapper *:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerSubscribe {
+    position: relative;
+  }
+  .footerWrapper > * {
+    flex: 1;
+    display: inline-flex;
+    width: 100%;
+    min-width: 250px;
+  }
+
+  .copyrightInfo p {
+    padding: 10px;
+  }
+}

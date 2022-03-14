@@ -1,0 +1,37 @@
+.directory {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dirHeader {
+  text-align: center;
+}
+
+.dirHeader h1 {
+  font-size: 1.7rem;
+  padding: 30px 0 30px;
+}
+
+.dirHeader p {
+  padding: 0px 30px;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+
+.dirHeader p a {
+  text-decoration: none;
+  color: #1c3afe;
+  border-bottom: 1px solid #1c3afe;
+}
+
+.dirHeader p a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}

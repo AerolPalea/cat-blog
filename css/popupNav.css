@@ -1,0 +1,193 @@
+.popupNav {
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: fixed;
+  left: -1024px;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.leftSide {
+  flex: 1;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  padding: 0 60px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.xWrapper {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  top: 60px;
+  left: 40px;
+}
+
+.one {
+  transform-origin: center;
+  rotate: 45deg;
+  height: 3px;
+  width: 25px;
+  left: 0;
+  top: calc(50% - 1.5px);
+  border-radius: 20px;
+  margin: auto;
+  position: absolute;
+  background-color: black;
+}
+
+.two {
+  transform-origin: center;
+  rotate: -45deg;
+  height: 3px;
+  width: 25px;
+  left: 0;
+  top: calc(50% - 1.5px);
+  border-radius: 20px;
+
+  margin: auto;
+  position: absolute;
+  background-color: black;
+}
+
+.leftSide::after {
+  content: "";
+  height: 0.5px;
+  width: 100%;
+  background-color: lightgray;
+  bottom: -50px;
+  position: absolute;
+}
+
+.menuOptions {
+  list-style: none;
+  padding: 2rem;
+}
+
+.menuOptions a {
+  font-family: "Murecho", sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 2.2rem;
+  color: #bbbbbb;
+}
+
+.menuOptions a:active,
+.menuOptions a:hover {
+  color: #0022ff;
+  opacity: 1;
+}
+
+.socialLinks {
+  width: 100%;
+  padding: 0 0 2rem;
+}
+
+.socialLinks:hover > .hoverWrapperNavPopup a {
+  opacity: 0.5;
+}
+
+.socialLinks a:hover {
+  opacity: 1 !important;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  padding: 0.5rem;
+  user-select: none;
+}
+
+.leftSide p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.rightSide {
+  text-align: center;
+  flex: 1;
+}
+
+.categories {
+  padding: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.categoriesList {
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.categoriesList a {
+  font-family: "Murecho", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0022ff;
+  line-height: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.categoriesList a:hover {
+  color: rgb(95, 95, 95);
+}
+
+.subscribeWrapper h3 {
+  padding: 0 0 2rem;
+}
+
+.subTitle {
+  padding: 0 0 2rem;
+}
+
+.signUpWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.signUpWrapper input {
+  outline: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+.signUpWrapper button {
+  border: none;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.signUpWrapper button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+.subscribeWrapper p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2rem;
+}
