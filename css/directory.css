@@ -12,6 +12,7 @@
 
 .dirHeader {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .dirHeader h1 {
@@ -34,4 +35,36 @@
 .dirHeader p a:hover {
   color: black;
   border-bottom: 1px solid black;
+}
+
+.state {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.catfeLocationWrapper {
+  display: flex;
+}
+
+.businessCard {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-basis: content;
+}
+
+.nameAndLocation {
+  padding: 30px;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+}
+
+.addInfo {
+  flex: 50%;
+  padding: 30px;
 }

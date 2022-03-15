@@ -1,15 +1,22 @@
 .articlesWrapper {
-  padding: 50px 95px 0;
+  position: relative;
+  padding: 50px 200px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .articleWrapper {
-  width: 271px;
+  flex-basis: 33.333%;
+  max-width: 271px;
+  min-width: 271px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   background-color: #fff;
-  margin-bottom: 60px;
+  height: fit-content;
 }
 
 .articleWrapper a {
@@ -90,4 +97,20 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   color: rgb(148, 148, 148);
+}
+
+.loadMore {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 100px;
+  color: #0022ff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.loadMore:hover {
+  color: black;
 }

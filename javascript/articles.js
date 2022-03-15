@@ -12,16 +12,71 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("../MOCK_DATA.json", function (text) {
-    const articles = JSON.parse(text)[0].articles
-    function iterateArticles() {
-        for (let i = 0; i < articles.length; i++) {
-            let images = articles[i].image
-            const articlesWrapper = document.querySelector('.articlesWrapper')
-            for (let i = 0; i < images; i++) {
-                articlesWrapper.innerHTML = images[i]
+document.addEventListener("DOMContentLoaded", () => {
+    readTextFile("../MOCK_DATA.json", function (text) {
+        const data = JSON.parse(text)[0].articles
+        data.slice([0], [20]).map((article) => {
+            const image = article.image
+            const date = article.date
+
+            // Checks if month has 1 or 2 digits in JSON file date
+            function month1or2Digits() {
+                const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+                if (date[1] == "/") {
+                    const month = date[0]
+                    return monthNames[month - 1]
+                } else if (date[2] == "/") {
+                    const month = date[0] + date[1]
+                    return monthNames[month - 1]
+                }
             }
-        }
-    }
-    iterateArticles()
+
+            const month = month1or2Digits()
+
+            // Checks if day has 1 or 2 digits in JSON file date
+            function day1or2Digits() {
+                if (date[1] == "/" && date[3] == "/") {
+                    const day = date[2]
+                    return day
+                } else if (date[1] == "/" && date[4] == "/") {
+                    const day = date[2] + date[3]
+                    return day
+                } else if (date[2] == "/" && date[5] == "/") {
+                    const day = date[3] + date[4]
+                    return day
+                } else if (date[2] == '/' && date[4] == "/") {
+                    const day = date[3]
+                    return day
+                }
+            }
+
+            const day = day1or2Digits()
+            const headline = article.headline
+            const articleType = article.articleType
+            const articlesWrapper = document.querySelector('.articlesWrapper')
+            const html = `
+                <div class="articleWrapper" id="articleWrapper">
+                <a href="">
+                    <span class="darken"></span>
+                    <img class="thumbnail" src=${image} alt="">
+                </a>
+                <div class="dateUploaded">${month + `<br>` + day}</div>
+                <div class="headlineWrapper">
+                    <a href="">
+                        <h3 class="headline">${headline}</h3>
+                    </a> 
+                </div>
+                <div class="articleType">${articleType}</div>
+                </div>
+                `
+
+            articlesWrapper.innerHTML += html
+        })
+
+    });
+
+
 })
+
+// const loadMore = document.querySelector('.loadMore')
+

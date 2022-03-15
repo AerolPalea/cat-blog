@@ -174,13 +174,13 @@ function showSocials() {
     socialMediaLinks.style.visibility = 'visible'
 }
 
-// ENsures that nav links in navbar stay visible 
+// Ensures that nav links in navbar stay visible 
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 850) {
+    if (window.innerWidth >= 1200) {
+        socialMediaLinks.style.transition = '0s ease'
         socialMediaLinks.style.visibility = 'visible'
     } else {
         socialMediaLinks.style.visibility = 'hidden'
-
     }
 })
 
@@ -196,5 +196,3 @@ input.addEventListener('focusin', () => {
 input.addEventListener('blur', () => {
     footerSubscribe.style.background = ''
 })
-
-console.log(window.innerWidth)
