@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/contact.css">
+</head>
+
+<body>
+    <%- include('./partials/nav') %> 
+    <main class="contact">
+        <div class="wrapper">
+            <form class="sendEmailContainer">
+                <div class="headline">Send us an email:</div>
+                <div class="name">Name</div>
+                <div class="fandlname">
+                    <div class="firstName">
+                        <input id="fname" type="text">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="lastName">
+                        <input id="lname" type="text">
+                        <label for="lname">Last Name</label>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="contactEmail">Email Address * </label>
+                    <input id="contactEmail" type="email">
+                </div>
+                <div class="subject">
+                    <label for="subject">Subject *</label>
+                    <input id="subject" type="text">
+                </div>
+                <div class="message">
+                    <label for="message">Message *</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="submitButton">
+                    <button id="submitButton">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="subToNewsletter">
+            <div class="newsLetterHeadline">And subscribe to our newsletter:</div>
+            <div class="newsLetterSubTitle">We love you (and cats!)</div>
+            <p>Sign up with your email address to receive news and updates.</p>
+            <div class="inputField">
+                <input type="email" placeholder="Email Address">
+                <button>Sign Up</button>
+            </div>
+            <p>We respect your privacy.</p>
+        </div>
+
+        .
+    </main>
+    <footer>
+        <div class="footerWrapper">
+            <div class="footerSubscribe">
+                <h3>Subscribe to Our Newsletter </br> - MEOW!</h3>
+                <div class="userInputFooter">
+                    <input id="input" type="email" placeholder="Email Address">
+                    <button id="button">Sign Up</button>
+                </div>
+            </div>
+            <div class="footerSocials">
+                <h5>Follow Us</h5>
+                <div class="hoverContainer">
+                    <div class="footerSocialLinks">
+                        <a href="https://facebook.com">
+                            <img src="../images/fbLogo.svg" alt="" height="25">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="../images/twitterLogo.svg" alt="" height="25">
+                        </a>
+                        <a href="https://instagram.co.il">
+                            <img src="../images/igLogo.svg" alt="" height="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerNav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Directory</a>
+                <a href="">Contact</a>
+                <a href="">+ policies</a>
+            </div>
+            <div class="copyrightInfo">
+                <h4>COPYRIGHT</h4>
+                <p>© 2015-2017 </br> That Cat Blog, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
