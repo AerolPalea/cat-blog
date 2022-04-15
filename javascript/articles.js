@@ -12,10 +12,10 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-document.addEventListener("DOMContentLoaded", () => {
-    readTextFile("../MOCK_DATA.json", function (text) {
-        const data = JSON.parse(text)[0].articles
-        data.slice([0], [20]).map((article) => {
+readTextFile("../JSON/articles.json", function (text) {
+    const data = JSON.parse(text)[0].articles
+    function loadArticles(num1, num2) {
+        data.slice([num1], [num2]).map((article) => {
             const image = article.image
             const date = article.date
 
@@ -51,32 +51,39 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const day = day1or2Digits()
-            const headline = article.headline
+            const articleHeadline = article.headline
             const articleType = article.articleType
             const articlesWrapper = document.querySelector('.articlesWrapper')
+
+            const headline = 'headline'
+
             const html = `
                 <div class="articleWrapper" id="articleWrapper">
-                <a href="">
-                    <span class="darken"></span>
-                    <img class="thumbnail" src=${image} alt="">
-                </a>
-                <div class="dateUploaded">${month + `<br>` + day}</div>
-                <div class="headlineWrapper">
-                    <a href="">
-                        <h3 class="headline">${headline}</h3>
-                    </a> 
-                </div>
-                <div class="articleType">${articleType}</div>
+                    <a href="../html/articlePage.html">
+                        <span class="darken"></span>
+                        <img class="thumbnail" src=${image} alt="">
+                    </a>
+                    <div class="dateUploaded">${month + `<br>` + day}</div>
+                    <div class="headlineWrapper">
+                        <a href="#">
+                            <h3 class=${headline}>${articleHeadline}</h3>
+                        </a> 
+                    </div>
+                    <div class="articleType">${articleType}</div>
                 </div>
                 `
 
             articlesWrapper.innerHTML += html
         })
+    }
+    loadArticles(0, 40)
 
-    });
+    const headline = document.getElementsByClassName('headline').item(1)
 
 
-})
 
-// const loadMore = document.querySelector('.loadMore')
+    headline.addEventListener("click", () => {
+        console.log("hello")
+    })
+});
 

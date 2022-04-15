@@ -1,0 +1,320 @@
+.pageMain {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1300px;
+  padding: 0 90px;
+}
+
+.articleInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 80px;
+}
+
+.articleInfoWrapper img {
+  max-width: 100%;
+}
+
+.articlePostDate {
+  background-color: black;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  font-weight: bold;
+  bottom: 30px;
+}
+
+.articleHeadline {
+  margin-top: 50px;
+  font-size: 2rem;
+  padding: 0 90px;
+  font-weight: bold;
+}
+
+.line {
+  height: 3px;
+  width: 50px;
+  background-color: #0022ff;
+  margin: 30px 0;
+}
+
+.articlecategory {
+  text-decoration: none;
+  color: #bbbbbb;
+  font-weight: bold;
+}
+
+.articlecategory:hover {
+  color: #0022ff;
+}
+
+.pageMainBody {
+  display: flex;
+}
+
+.articleContent {
+  flex: 5;
+  padding: 0 80px;
+  max-width: 80%;
+}
+
+.articleContent p a {
+  text-decoration: none;
+  color: #0022ff;
+}
+
+.articleContent p a:hover {
+  color: rgb(43, 43, 43);
+}
+
+.articleContentTop {
+  margin-bottom: 100px;
+}
+
+.articleContentTop img {
+  max-width: 100%;
+  padding: 25px 0;
+}
+
+.header {
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.disclosure {
+  padding-bottom: 50px;
+  line-height: 2rem;
+}
+
+.subHeader {
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.subHeader hover {
+  color: #0022ff;
+}
+
+.subHeader hover:hover {
+  color: #5e73fc;
+}
+
+.content {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  padding: 35px 0;
+}
+
+.contentImgWrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.tags {
+  margin-top: 70px;
+  line-height: 2rem;
+}
+
+.tags span {
+  color: rgb(187, 187, 187);
+}
+
+.tags span a {
+  text-decoration: none;
+  color: rgb(187, 187, 187);
+  font-size: 1rem;
+}
+
+.tags span a:hover {
+  color: #0022ff;
+}
+
+.header::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 50px;
+  background-color: lightgray;
+  position: absolute;
+}
+
+.articleContent h3 {
+  line-height: 2.2rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.articleContentSocials {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+.socialItemArticlePage {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 0.2px solid rgb(189, 189, 189);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.socialItemArticlePage img {
+  width: 15px;
+  margin-right: 8px;
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(265deg) brightness(0%)
+    contrast(104%);
+}
+
+.socialItemArticlePage span {
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+}
+
+.editorArticleslink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  margin-bottom: 50px;
+  background-color: #f0f0f0;
+}
+
+.editorArticleslink a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0022ff;
+}
+
+.editorArticleslink a:hover {
+  color: rgb(87, 87, 87);
+}
+
+.leaveCommentButton {
+  color: #0022ff;
+  cursor: pointer;
+}
+
+.articleContentSidebar {
+  flex: 1.8;
+}
+
+.latestArticles {
+  margin-bottom: 50px;
+}
+
+.latestArticle {
+  display: flex;
+}
+
+.articleInfoRight {
+  padding: 0 20px;
+}
+
+.headerSidebar {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.readMore {
+  text-decoration: none;
+}
+
+.readMore span {
+  color: #aaaaaa;
+}
+
+.readMore img {
+  filter: invert(59%) sepia(85%) saturate(0%) hue-rotate(151deg) brightness(96%)
+    contrast(97%);
+}
+
+.datePosted {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: rgb(202, 202, 202);
+}
+
+.seperatorDiv {
+  background-color: #d8d8d8;
+  max-width: 100%;
+  height: 0.3px;
+  margin: 30px 0;
+}
+
+.sidebarSocialsTitle {
+  margin-bottom: 50px;
+}
+
+.sidebarSocial {
+  text-decoration: none;
+  filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(9deg) brightness(0%)
+    contrast(1000%);
+  margin-right: 15px;
+  transition: 0.3s ease;
+}
+
+.sidebarSocial:hover {
+  filter: brightness(100%);
+}
+
+.sidebarSocial img {
+  width: 25px;
+}
+
+.seperatorDivSidebar {
+  display: block;
+  width: 100%;
+  border-top: 0.1px solid rgb(218, 218, 218);
+  padding: 0.3px 0;
+  margin: 50px 0;
+}
+
+.atThatCatBlog {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.imageGrid {
+  grid-row: 2;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.imageGrid img {
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .pageMain {
+    padding: 0 50px;
+  }
+
+  .articleHeadline {
+    padding: 0;
+  }
+}

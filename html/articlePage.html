@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/popupNav.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/articlePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Murecho:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1491416439027-1W7X6FVXQFPE9C4FZCFD/favicon.ico?format=100w">
+    <script src="../javascript/navStyles.js" defer></script>
+    <title>That Cat Blog</title>
+</head>
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="top">
+                <div class="menuOpenerWrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="siteLogo">
+                    <a href="../index.html">
+                        <img src="//images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1495994577984-EA0K6WZRKPOKAXBFKMXY/TCB+banner_transparent.png?format=1500w" alt="" height="50">
+                    </a>    
+                </div>
+                <div class="navTopRight">
+                    <div class="hoverContainer">
+                        <div class="socialMediaLinks">
+                            <a href="https://facebook.com" target="blank" class="fbLink">
+                                <img src="../images/fbLogo.svg" alt="" height="18" width="18">
+                            </a>
+                            <a href="https://twitter.com" target="blank" class="twitterLink">
+                                <img src="../images/twitterLogo.svg" alt="" height="18" width="18">
+                            </a>
+                            <a href="https://instagram.com" target="blank" class="instagramLink">
+                                <img src="../images/igLogo.svg" alt="" height="18" width="18">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navSearchIcon">
+                        <img id="searchIcon" src="../images/search-solid.svg" alt="" height="18">
+                        <img id="xIcon" src="../images/x-solid.svg" alt="" height="18">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul class="navMenuOptions">
+                    <li class="navBlog navItem ">
+                        <a href="../index.html">Blog</a>
+                    </li>
+                    <li class="navAbout navItem">
+                        <a href="../html/about.html">About</a>
+                    </li>
+                    <li class="navDirectory navItem">
+                        <a href="../html/directory.html">Cat Cafe Directory</a>
+                    </li>
+                    <li class="navContact navItem">
+                        <a href="../html/contact.html">Contact</a>
+                    </li>
+                    <li class="navPolicies navItem">
+                        <div class="policiesDropdownButton"><span class="policiesPlusMinus" width="15px" height="13px"> + </span>Policies</div>
+                        <div class="policiesDropdownWrapper">
+                            <ul class="policiesDropdown">
+                                <li>
+                                    <a href="../html/policy/terms.html">Terms and Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="../html/policy/privacy.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="../html/policy/disclaimer.html">Disclaimer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mediaQueryDiv">
+            <img class="kebabMenu" src="../images/kebabMenu.svg" alt="" height="18">
+            <img class="xIconMediaQuery" src="../images/x-solid.svg" alt="" height="18">
+        </div>
+        <div class="searchField">
+            <input id="searchFieldInput" type="search" placeholder="Search">
+        </div>
+        <div class="popupNav" id="popupNav">
+            <div class="leftSide">
+                <div class="xWrapper" id="xWrapper">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                </div>
+                <ul class="menuOptions">
+                    <li class="navBlog navItem active">
+                        <a href="../index.html">Blog</a>
+                    </li>
+                    <li class="navAbout navItem">
+                        <a href="../html/about.html">About</a>
+                    </li>
+                    <li class="navDirectory navItem">
+                        <a href="../html/directory.html">Cat Cafe Directory</a>
+                    </li>
+                    <li class="navContact navItem">
+                        <a href="../html/contact.html">Contact</a>
+                    </li>
+                    <li class="navPolicies navItem">
+                    </li>
+                </ul>
+                <div class="socialLinks">
+                    <a href="https://facebook.com" target="blank" class="fbLink">
+                        <img src="../images/fbLogo.svg" alt="" height="18" width="18">
+                    </a>
+                    <a href="https://twitter.com" target="blank" class="twitterLink">
+                        <img src="../images/twitterLogo.svg" alt="" height="18" width="18">
+                    </a>
+                    <a href="https://instagram.com" target="blank" class="instagramLink">
+                        <img src="../images/igLogo.svg" alt="" height="18" width="18">
+                    </a>
+                </div>
+                <p>That Cat Blog is based in Brooklyn, NY and showcases cat-related stories in the news and pop culture.</p>
+            </div>
+            <div class="rightSide">
+                <div class="categories">Categories</div>
+                <ul class="categoriesList">
+                    <li>
+                        <a href="">Artist Spotlight</a>
+                    </li>
+                    <li>
+                        <a href="">Cat Events</a>
+                    </li>
+                    <li>
+                        <a href="">Cat Merch</a>
+                    </li>
+                    <li>
+                        <a href="">Cats in the Mews</a>
+                    </li>
+                    <li>
+                        <a href="">Cats of Instagram</a>
+                    </li>
+                    <li>
+                        <a href="">Caturdays with Thomas</a>
+                    </li>
+                    <li>
+                        <a href="">Cute Cats</a>
+                    </li>
+                    <li>
+                        <a href="">Gift Guides</a>
+                    </li>
+                    <li>
+                        <a href="">Giveaways</a>
+                    </li>
+                    <li>
+                        <a href="">Guest Posts</a>
+                    </li>
+                    <li>
+                        <a href="">How To</a>
+                    </li>
+                    <li>
+                        <a href="">Internet Cats</a>
+                    </li>
+                    <li>
+                        <a href="">Interviews With Cats</a>
+                    </li>
+                    <li>
+                        <a href="">Reviews</a>
+                    </li>
+                </ul>
+                <div class="subscribeWrapper">
+                    <h3>Subscribe</h3>
+                    <div class="subTitle">Subscribe to our newsletter - MEOW!</div>
+                    <div class="signUpWrapper">
+                        <input type="email" placeholder="Email Address">
+                        <button>Sign Up</button>
+                    </div>
+                    <p>We respect your privacy.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="blogArticle">
+        <div class="pageMain">
+            <div class="articleInfoWrapper">
+                <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523382809677-TJVGDGRZMMT6GY9GGYBX/00001.jpg?format=1010w" alt="">
+                <div class="articlePostDate">APR <br>11</div>
+                <div class="articleHeadline">Grumpy Cat Teams Up With Purina And Petsmart At Her 'Save A Fortune' Birthday Party In NYC</div>
+                <div class="line"></div>
+                <a href="#" class="articlecategory">Cat Events</a>
+            </div>
+            <div class="pageMainBody">
+                <div class="articleContent">
+                    <div class="articleContentTop">
+                        <div class="header">
+                            <h3>America's most beloved sourpuss - the one and only Grumpy Cat - recently turned six and we helped her celebrate with Purina® and PetSmart's® "Save A Fortune" event in New York City! There were balloons, cake, a fortune teller, and yes, Grumpy Cat was on site to begrudgingly pose for pictures with her adoring fans. Grumpy's one birthday wish is to help her fur-riends Save A Fortune this year - so read on for more birthday party pics and details!</h3>
+                        </div>
+                        <div class="disclosure">DISCLOSURE: This post has been compensated by Collective Bias, Inc. and its advertiser. All opinions are mine alone. #FortunaForAll #CollectiveBias #CBias</div>
+                        <div class="subHeader">Grumpy Cat teamed up with <hover>Purina®</hover> and <hover>PetSmart®</hover> to celebrate her sixth birthday party here in NYC! When Grumpy Cat invites you to her party, clearly you don't say no - so we were there to sing her happy birthday and watch her blow out her candles last week:</div>
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523383763455-2RC870PBAQ9DHHMLIC4I/grumpy-cat-cake-candles?format=1000w" alt="">
+                        <p class="parag1 subHeader">Contrary to her frowny appearance, Grumpy Cat's only birthday wish is for all of her pet friends to have a "pros-purr-ous year" so she has teamed up with Petsmart and Purina for their "Save A Fortune" promotion. I'm not gonna lie: Grumpy Cat's birthday party was way better than my last birthday party. There was a cake and cake pops, Grumpy Cat balloons, limited edition Grumpy Cat tarot cards, and a local fortune teller who read my fortune for me (spoiler: she said the next 3 months for me involves a lot of writing .... but that it would all be beneficial to my larger goals! Yay!)</p>
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523381174932-PMSZE9TBBZYDES2UVBZ9/grumpy-cat-party-balloons?format=1000w" alt="">
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523381353388-RG6QMH8NUZZE072T83IO/grumpy-cat-fortune-teller-patty-scull?format=1000w" alt="">
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523381065990-R5GTEK88A1MY1XQGXI2F/grumpy-cat-cake-pops?format=1000w" alt="">
+                        <p class="content">Grumpy Cat is so generous that consumers who spend $20 at Petsmart on qualifying Purina products (both dog and cat products) in a single purchase will receive a $5 gift card (mailed within 8-10 weeks) after submitting a photo of the receipt of purchase. Pet owners can also get additional gift cards for each additional $20 they spend. The promo runs through May 18 for purchases, and you can redeem your gift card online until May 31. And shoppers can save even more by going online and participating in an interactive "instant win" game with clairvoyant fortune telling kitty, Madame Fortuna - all at <a href="">PurinaFortunes.com</a>!</p>
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523389226522-4N795CD1SA2R4KCABWNN/grumpy-cat-madam-fortuna-purina-petsmart-nyc?format=1000w" alt="">
+                        <p class="content">Consumers can also enter the "Paws of Fate" Sweepstakes now through May 31 for the chance to win one of two grand prizes - the Dream of Fortunes Pet Beds (one for a cat, one for a dog). Enter by registering for the program at PurinaFortunes.com and share on Twitter for additional bonus entries. Check out the Social Hub to access the Rebate/Instant Win site.</p>
+                        <div class="contentImgWrapper">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523383534988-001A0F14DI11N9FO6UVH/grumpy-cat-photo-op?format=500w" height="400" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523383584742-ZLALQI4OELO1W1SLR72I/patty-scull-grumpy-cat-blog?format=500w" height="400" alt="">
+                        </div>
+                        <p class="content">We recently made a trip to PetSmart to stock up on some of our favorite Thomas-approved products: </p>
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523388302167-B4JH3MUPFZ6D2IN8OWJ6/petsmart-atlantic-ave-brooklyn?format=1000w" alt="">
+                        <div class="wrapImageAndContent">
+                            <p class="content">We picked up a new dry food, Purina® Pro Plan® SAVOR® Shredded Blend in chicken and rice (you know how Thomas loves his chicken!) - it contains real poultry as the #1 ingredient, as well as omega fatty acids to keep Thomas's skin and coat looking supa fly. Look how he can't wait to get in the bag:</p>
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523389761856-MHQEJMOGD642X082EY2T/purina-pro-plan-savor-shredded-blend-petsmart?format=500w" alt="">
+                        </div>
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523387876222-2GC5HD5EPIYVR4B1NR8J/thomas-purina-pro-plan-chicken-savor?format=1000w" alt="">
+                        <p class="content">We also picked up some Tidy Cats Free and Clean Unscented Litter. It's super lightweight and keeps Thomas's toilet smelling fresh (well, as fresh as possible for a litter box!) We like it because it's free of dyes and contains natural activated charcoal (which - if you don't know - sucks up gross odors like nothing else!)</p>
+                        <div class="contentImgWrapper">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523388024086-OBK5PP8L65BXAV40WYQ4/thomas-tidy-cats-litter?format=500w" width="300" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523388400921-H0UFCGOUPRBDLC5LWAJB/thomas-litter-box-tidy-cats?format=500w" width="300" alt="">
+                        </div>
+                        <p class="content">So it turns out Grumpy Cat only has a grumpy exterior and a super sweet inside - hurry and register for your PetSmart gift cards and take advantage of Grumpy's "Save A Fortune" promo going on right now at <a href="#">PurinaFortunes.com</a>. On that note, we will leave you with one of our fave pics from Grumpy Cat's birthday party. Til next time!</p>
+                        <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523391858255-YGM3YEQ6K097HQC686WI/grumpy-cat-cake-pop-birthday?format=1000w" alt="">
+                        <div class="tags">
+                            <span>
+                                <a href="">Grumpy Cat</a>,
+                                <a href="">PetSmart</a>,
+                                <a href="">Purina</a>,
+                                <a href="">#FortunaForAll</a>,
+                                <a href="">sponsored</a>,
+                                <a href="">NYC events</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="articleContentBottom">
+                        <div class="articleContentSocials">
+                            <a class="socialItemArticlePage" href="https://facebook.com">
+                                <img src="../images/fbLogo.svg" width="50" alt="">
+                                <span>Facebook</span>
+                            </a>
+                            <a class="socialItemArticlePage" href="https://twitter.com">
+                                <img src="../images/twitterLogo.svg" width="50" alt="">
+                                <span>Twitter</span>
+                            </a>
+                            <a class="socialItemArticlePage" href="https://pinterest.com">
+                                <img src="../images/pinterest-logo.svg" width="50" alt="">
+                                <span>Pinterest</span>
+                            </a>
+                            <a class="socialItemArticlePage">
+                                <img src="../images/heart-solid.svg" width="50" alt="">
+                                <span>0 likes</span>
+                            </a>
+                        </div>
+                        <div class="editorArticleslink">
+                            <a href="#">Editor</a>
+                        </div>
+                        <div class="leaveCommentButton">Leave a comment</div>
+                        <div class="leaveCommentWrapper"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="articleContentSidebar">
+                    <div class="latestArticles">
+                        <div class="latestArticle 1">
+                            <div class="imgLeft">
+                                <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523382809677-TJVGDGRZMMT6GY9GGYBX/00001.jpg?format=500w" width="100" alt="">
+                            </div>
+                            <div class="articleInfoRight">
+                                <h4 class="headerSidebar">Grumpy Cat Teams Up With Purina And Petsmart At Her 'Save A Fortune' Birthday Party In NYC</h4>
+                                <a class="readMore" href="#">
+                                    <span>Read More</span>
+                                    <img src="../images/arrow-right-solid.svg" width="10px" alt="">
+                                </a>
+                                <div class="datePosted">APR 11, 2018</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperatorDivSidebar"></div>
+                    <div class="sidebarSocials">
+                        <div class="sidebarSocialsTitle">Follow Us</div>
+                        <a class="sidebarSocial" href="https://facebook.com">
+                            <img src="../images/fbLogo.svg" alt="" width="30">
+                        </a>
+                        <a class="sidebarSocial" href="https://twitter.com">
+                            <img src="../images/twitterLogo.svg" alt="" width="30">
+                        </a>
+                        <a class="sidebarSocial" href="https://instagram.com">
+                            <img src="../images/igLogo.svg" alt="" width="30">
+                        </a>
+                    </div>
+                    <div class="seperatorDivSidebar"></div>
+                    <div class="thatCatBlogInstagram">
+                        <div class="atThatCatBlog">@thatcatblog</div>
+                        <div class="imageGrid">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1560976264761-ONY7IXFWEEPCGDUPFQYE/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1558800786005-IVYOPN1VLP22ULQV4O37/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1558552241417-Y8N6AG8HWV7GGPV043V3/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1555168643063-LQ8BFHBS5LY57M2GIO6W/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1555003722429-LMZDIS1KQWDJ0SJJ3FMA/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1554309879783-7LOKOGR1G176HOXDT2EB/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1552427062818-U8RP0D9XA40TFV37N69M/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1545248935889-NM4EFN30FM62Z6JFIQJZ/image-asset.jpeg?format=750w" alt="">
+                            <img src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1542917572129-0CJCI4URZYINNRMXBKUW/image-asset.jpeg?format=1000w" alt="">
+                        </div>
+                        <div class="seperatorDivSidebar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="seperatorDiv"></div>
+            <div class="relatedArticles"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerWrapper">
+            <div class="footerSubscribe">
+                <h3>Subscribe to Our Newsletter </br> - MEOW!</h3>
+                <div class="userInputFooter">
+                    <input type="email" placeholder="Email Address">
+                    <button>Sign Up</button>
+                </div>
+            </div>
+            <div class="footerSocials">
+                <h5>Follow Us</h5>
+                <div class="hoverContainer">
+                    <div class="footerSocialLinks">
+                        <a href="https://facebook.com">
+                            <img src="../images/fbLogo.svg" alt="" height="25">
+                        </a>
+                        <a href="https://twitter.com">
+                            <img src="../images/twitterLogo.svg" alt="" height="25">
+                        </a>
+                        <a href="https://instagram.co.il">
+                            <img src="../images/igLogo.svg" alt="" height="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerNav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Directory</a>
+                <a href="">Contact</a>
+                <a href="">+ policies</a>
+            </div>
+            <div class="copyrightInfo">
+                <h4>COPYRIGHT</h4>
+                <p>© 2015-2017 </br> That Cat Blog, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

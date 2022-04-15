@@ -12,6 +12,8 @@ const navBar = document.querySelector('.navBar')
 const kebabMenu = document.querySelector('.kebabMenu')
 const socialMediaLinks = document.querySelector('.socialMediaLinks')
 const xIconMediaQuery = document.querySelector('.xIconMediaQuery')
+const popStyle = popupNav.style
+const htmlBody = document.body
 
 
 // opens and closes the popup nav menu 
@@ -21,26 +23,25 @@ function popupNavOpen() {
     searchIcon.style.display = 'flex'
     main.style.display = 'block'
     body.style.overflow = 'hidden'
-    popupNav.style.transition = '1s ease'
-    popupNav.style.opacity = '1'
+    popStyle.transition = '1s ease'
+    popStyle.opacity = '1'
     menuOpenerWrapper.style.opacity = '0'
-    popupNav.style.left = '0px'
+    popStyle.left = '0px'
     menuOpenerWrapper.style.opacity = '1'
     footer.style.visibility = 'hidden'
 }
 
 function popupNavClose() {
-    popupNav.style.transition = '0.8s ease'
-    popupNav.style.opacity = '0'
-    popupNav.style.left = '-1024px'
+    popStyle.transition = '0.8s ease'
+    popStyle.opacity = '0'
+    popStyle.left = '-1024px'
     body.style.overflow = 'auto'
     footer.style.visibility = 'visible'
 }
 
-
 menuOpenerWrapper.addEventListener('click', () => {
-    const position = menuOpenerWrapper.getBoundingClientRect().top
-    if (position >= 60) {
+    const menuOpenerPosition = menuOpenerWrapper.getBoundingClientRect().top
+    if (menuOpenerPosition >= 60) {
         kebabMenuClose()
         closeSearchBar()
         popupNavOpen()
@@ -54,20 +55,10 @@ xWrapper.addEventListener('click', () => {
     popupNavClose()
 })
 
-
-// Sets nav sliding window to closed if user clicks on main 
-main.addEventListener('click', () => {
-    popupNav.style.left = '-1024px'
-    body.style.overflow = 'auto'
-})
-//
-//
-
-
 // Sets behavior for the search bar when search icon is clicked
 function openSearchBar() {
     main.style.transition = '0.5s ease'
-    popupNav.style.left = '-1024px'
+    popStyle.left = '-1024px'
     searchField.style.visibility = 'visible'
     searchFieldInput.focus()
     xIcon.style.display = 'flex'
@@ -131,18 +122,17 @@ const navItem = document.querySelectorAll('.navItem a')
 
 const activePage = window.location.pathname
 
+console.log(activePage)
+
 navItem.forEach(link => {
     if (link.href.includes(`${activePage}`)) {
-        link.classList.add('active')
+        link.classList.toggle('active')
     }
 })
 //
 
 
 // Setting social links to open from clicking on kebab menu on media queried nav
-if (screen.width <= 800) {
-
-}
 function kebabMenuOpen() {
     xIconMediaQuery.style.display = 'block'
     kebabMenu.style.setProperty('display', 'none', 'important')
@@ -170,14 +160,9 @@ xIconMediaQuery.addEventListener('click', () => {
     kebabMenuClose()
 })
 
-function showSocials() {
-    socialMediaLinks.style.visibility = 'visible'
-}
-
 // Ensures that nav links in navbar stay visible 
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 1200) {
-        socialMediaLinks.style.transition = '0s ease'
+    if (window.innerWidth >= 1100) {
         socialMediaLinks.style.visibility = 'visible'
     } else {
         socialMediaLinks.style.visibility = 'hidden'
@@ -190,9 +175,29 @@ const footerSubscribe = document.querySelector('.footerSubscribe')
 
 
 input.addEventListener('focusin', () => {
+    input.style.color = "black"
     footerSubscribe.style.backgroundColor = 'transparent'
 })
 
 input.addEventListener('blur', () => {
     footerSubscribe.style.background = ''
 })
+
+
+// Affects behavior of the 'Policy' button in nav bar
+const policiesPlusMinus = document.querySelector('.policiesPlusMinus')
+const policiesDropdownButton = document.querySelector('.policiesDropdownButton')
+const policiesDropdownWrapper = document.querySelector(".policiesDropdownWrapper")
+
+policiesDropdownButton.addEventListener("click", () => {
+    if (policiesPlusMinus.innerHTML == " + ") {
+        policiesDropdownWrapper.style.display = "flex"
+        policiesPlusMinus.style.padding = "1.9px"
+        policiesPlusMinus.innerHTML = "- "
+    } else if (policiesPlusMinus.innerHTML == "- ") {
+        policiesDropdownWrapper.style.display = "none"
+        policiesPlusMinus.style.padding = "0"
+        policiesPlusMinus.innerHTML = " + "
+    }
+})
+

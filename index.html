@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./css/blog.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Murecho:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1491416439027-1W7X6FVXQFPE9C4FZCFD/favicon.ico?format=100w">
-    <script src="./MOCK_DATA(1).json" type="application/json"></script>
     <script src="./javascript/navStyles.js" defer></script>
+    <script src="./javascript/blog.js" defer></script>
+    <script src="./JSON/articles.json" type="application/json"></script>
     <script src="./javascript/articles.js" type="text/javascript" defer></script>
     <title>That Cat Blog</title>
 </head>
@@ -66,7 +67,20 @@
                             <a href="./html/contact.html">Contact</a>
                         </li>
                         <li class="navPolicies navItem">
-                            <a href="./policies.html">+ Policies</a>
+                            <div class="policiesDropdownButton"><span class="policiesPlusMinus" width="15px" height="13px"> + </span>Policies</div>
+                            <div class="policiesDropdownWrapper">
+                                <ul class="policiesDropdown">
+                                    <li>
+                                        <a href="./html/policy/terms.html">Terms and Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="./html/policy/privacy.html">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="./html/policy/disclaimer.html">Disclaimer</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -176,20 +190,9 @@
         </nav>
         <main class="blog" style="text-align: center;">
             <div class="articlesWrapper" id="articlesWrapper">
-                <!-- <div class="articleWrapper" id="articleWrapper">
-                    <a href="">
-                        <span class="darken"></span>
-                        <img class="thumbnail" src="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1523382809677-TJVGDGRZMMT6GY9GGYBX/00001.jpg?format=750w" alt="">
-                    </a>
-                    <div class="dateUploaded">Apr <br> 11</div>
-                    <div class="headlineWrapper">
-                        <a href="">
-                            <h3 class="headline">Grumpy Cat Teams Up With Purina And Petsmart At Her 'Save A Fortune' Birthday Party In NYC </h3>
-                        </a>
-                    </div>
-                    <div class="articleType">Cat Events</div>
-                </div> -->
-                <div class="loadMore">Load More</div>
+                <div>
+                    <button class="loadMore">Load More</button>
+                </div>
             </div>
         </main>
         <footer>

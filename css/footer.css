@@ -12,13 +12,12 @@
 }
 
 .footerWrapper > * {
-  background-color: white;
   transition: 0.3s ease-in-out;
   padding: 40px;
 }
 
 .footerWrapper > *:hover {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .footerWrapper::before {
@@ -34,6 +33,10 @@
   flex: 3;
   width: min-content;
   border-radius: 20px;
+}
+
+.footerSubscribe:hover > .userInputFooter input {
+  background-color: #f8f8f8;
 }
 
 .footerSubscribe h3 {

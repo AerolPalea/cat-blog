@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +8,15 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/navBar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="icon"
-        href="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1491416439027-1W7X6FVXQFPE9C4FZCFD/favicon.ico?format=100w">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&family=Murecho:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1491416439027-1W7X6FVXQFPE9C4FZCFD/favicon.ico?format=100w">
+    <script src="../javascript/articles.js"></script>
     <script src="../javascript/navStyles.js" defer></script>
-    <script src="../javascript/contact.js" defer></script>
+    <script src="../javascript/category.js" defer></script>
     <title>That Cat Blog</title>
 </head>
-
 <body>
     <nav>
         <div class="navBar">
@@ -30,9 +28,8 @@
                 </div>
                 <div class="siteLogo">
                     <a href="../index.html">
-                        <img src="//images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1495994577984-EA0K6WZRKPOKAXBFKMXY/TCB+banner_transparent.png?format=1500w"
-                            alt="" height="50">
-                    </a>
+                        <img src="//images.squarespace-cdn.com/content/v1/58e534c52e69cfd83dc862d9/1495994577984-EA0K6WZRKPOKAXBFKMXY/TCB+banner_transparent.png?format=1500w" alt="" height="50">
+                    </a>    
                 </div>
                 <div class="navTopRight">
                     <div class="hoverContainer">
@@ -69,25 +66,23 @@
                         <a href="../html/contact.html">Contact</a>
                     </li>
                     <li class="navPolicies navItem">
-                        <div class="policiesDropdownButton"><span class="policiesPlusMinus" width="15px" height="13px">
-                                + </span>Policies</div>
+                        <div class="policiesDropdownButton"><span class="policiesPlusMinus" width="15px" height="13px"> + </span>Policies</div>
                         <div class="policiesDropdownWrapper">
                             <ul class="policiesDropdown">
                                 <li>
-                                    <a href="./html/policy/terms.html">Terms and Conditions</a>
+                                    <a href="../html/policy/terms.html">Terms and Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="./html/policy/privacy.html">Privacy Policy</a>
+                                    <a href="../html/policy/privacy.html">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="./html/policy/disclaimer.html">Disclaimer</a>
+                                    <a href="../html/policy/disclaimer.html">Disclaimer</a>
                                 </li>
                             </ul>
                         </div>
+                    </li>
+                </ul>
             </div>
-            </li>
-            </ul>
-        </div>
         </div>
         <div class="mediaQueryDiv">
             <img class="kebabMenu" src="../images/kebabMenu.svg" alt="" height="18">
@@ -116,7 +111,6 @@
                         <a href="../html/contact.html">Contact</a>
                     </li>
                     <li class="navPolicies navItem">
-                        <a href="../policies.html">+ Policies</a>
                     </li>
                 </ul>
                 <div class="socialLinks">
@@ -130,8 +124,7 @@
                         <img src="../images/igLogo.svg" alt="" height="18" width="18">
                     </a>
                 </div>
-                <p>That Cat Blog is based in Brooklyn, NY and showcases cat-related stories in the news and pop culture.
-                </p>
+                <p>That Cat Blog is based in Brooklyn, NY and showcases cat-related stories in the news and pop culture.</p>
             </div>
             <div class="rightSide">
                 <div class="categories">Categories</div>
@@ -191,58 +184,21 @@
             </div>
         </div>
     </nav>
-    <main class="contact">
-        <div class="wrapper">
-            <form class="sendEmailContainer">
-                <div class="headline">Send us an email:</div>
-                <div class="name">Name</div>
-                <div class="fandlname">
-                    <div class="firstName">
-                        <input id="fname" type="text">
-                        <label for="fname">First Name</label>
-                    </div>
-                    <div class="lastName">
-                        <input id="lname" type="text">
-                        <label for="lname">Last Name</label>
-                    </div>
-                </div>
-                <div class="email">
-                    <label for="contactEmail">Email Address * </label>
-                    <input id="contactEmail" type="email">
-                </div>
-                <div class="subject">
-                    <label for="subject">Subject *</label>
-                    <input id="subject" type="text">
-                </div>
-                <div class="message">
-                    <label for="message">Message *</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
-                </div>
-                <div class="submitButton">
-                    <button id="submitButton">Submit</button>
-                </div>
-            </form>
-        </div>
-        <div class="subToNewsletter">
-            <div class="newsLetterHeadline">And subscribe to our newsletter:</div>
-            <div class="newsLetterSubTitle">We love you (and cats!)</div>
-            <p>Sign up with your email address to receive news and updates.</p>
-            <div class="inputField">
-                <input type="email" placeholder="Email Address">
-                <button>Sign Up</button>
+    <main class="blogArticle" style="text-align: center;">
+        <div class="textContainer"></div>
+        <div class="articlesWrapper" id="articlesWrapper">
+            <div>
+                <button class="loadMore">Load More</button>
             </div>
-            <p>We respect your privacy.</p>
         </div>
-
-        .
     </main>
     <footer>
         <div class="footerWrapper">
             <div class="footerSubscribe">
                 <h3>Subscribe to Our Newsletter </br> - MEOW!</h3>
                 <div class="userInputFooter">
-                    <input id="input" type="email" placeholder="Email Address">
-                    <button id="button">Sign Up</button>
+                    <input type="email" placeholder="Email Address">
+                    <button>Sign Up</button>
                 </div>
             </div>
             <div class="footerSocials">
@@ -275,5 +231,4 @@
         </div>
     </footer>
 </body>
-
 </html>
